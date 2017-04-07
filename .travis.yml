@@ -9,6 +9,6 @@ before_script:
 
 script:
   - travis_retry docker run --rm -it -v "$(pwd)":/go/src/app --workdir /go/src/app golang:1.7-alpine go run ./extract-nss-root-certs/convert_mozilla_certdata.go > ca-certificates.pem
-  - travis_retry docker build -t '$prefix:latest' .
+  - travis_retry docker build -t "$prefix:latest" .
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push "$prefix:latest"

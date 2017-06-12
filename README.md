@@ -1,6 +1,6 @@
 # harborfront/base
 
-![Travis CI Build Status](https://travis-ci.org/harborfront/docker-ca-certificates.svg)
+[![Travis CI Build Status](https://travis-ci.org/harborfront/docker-ca-certificates.svg)](https://travis-ci.org/harborfront/docker-ca-certificates)
 
 `FROM harborfront/base`
 
